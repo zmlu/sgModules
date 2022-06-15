@@ -78,7 +78,7 @@ async function zhHantTransToZhHans(body) {
     trans({}, "", configurations)
 
     // Output Data
-    $.log(`🎉 ${$.name}, ${outputConfigs.name}完成`, "");
+    $.log(`🎉 ${$.name}, Apple TV zhHant2zhHans.js 完成`, "");
     body = JSON.stringify(configurations);
     return body
 };
