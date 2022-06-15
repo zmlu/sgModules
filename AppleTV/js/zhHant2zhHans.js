@@ -51,7 +51,8 @@ const URL = new URLs();
     if (url.path.includes("uts/v3/shows/") ||
         url.path.includes("uts/v3/canvases/Persons/") ||
         url.path.includes("uts/v3/canvases/Rooms/edt") ||
-        url.path.includes("uts/v3/movies/")
+        url.path.includes("uts/v3/movies/") ||
+        url.path.includes("uts/v3/episodes/")
     ) {
         if (url.params.caller !== "wta" && url.params.sf === '143470') { // 不修改caller=wta的configurations数据
             const locale = $request?.headers?.["X-Apple-I-Locale"]?.split('_')?.[0] ?? "zh-Hans"
