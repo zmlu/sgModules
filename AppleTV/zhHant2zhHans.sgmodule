@@ -2,11 +2,11 @@
 #!desc=TV app 香港繁体转简体
 #!author=zmlu
 #!homepage=https://github.com/zmlu
-#!manual=https://github.com/zmlu/sgModules/AppleTV
+#!manual=https://github.com/zmlu/sgModules/tree/main/AppleTV
 #!icon=https://www.apple.com/v/apple-tv-app/p/images/overview/apple_tv_icon__br5y3uwaibjm_large.png
 
 [Script]
-TV zhHant2zhHans = type=http-response, pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/zmlu/sgModules/main/AppleTV/zhHant2zhHans.js
+TV zhHant2zhHans = type=http-response, pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/zmlu/sgModules/main/AppleTV/js/zhHant2zhHans.js
 
 [MITM]
 hostname = %APPEND% uts-api.itunes.apple.com
